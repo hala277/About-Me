@@ -1,0 +1,113 @@
+'use strict';
+let userName = prompt('hi to my website what is your name stranger ?')
+userName= prompt("oh Hi nice to met you  " + userName);
+let guessingGame = prompt("do you wana play a guessing game about me ? ");
+if (guessingGame != null) {
+    guessingGame = guessingGame.toLowerCase();
+}
+
+
+switch (guessingGame) {
+    case 'yes':
+    case 'y':
+        //console.log('great !! ,lets start ');
+        alert('great !! ,lets start ');
+        break;
+    case 'no':
+    case 'n':
+        //console.log('oh why!!');
+        alert('oh why!!');
+        break;
+    default:
+        //console.log('you have to answer either yes or no');
+        alert('you have to answer either yes or no');
+        break;
+}
+
+let gender = prompt('am I a girl?');
+if (gender != null) {
+    gender = gender.toLowerCase();
+}
+switch (gender) {
+    case 'yes':
+    case 'y':
+        // console.log('thats trueee ');
+        alert('thats trueee ');
+        break;
+    case 'no':
+    case 'n':
+        // console.log('oh I\'m a girl!!');
+        alert('oh I\'m a girl!!');
+        break;
+    default:
+        //  console.log('I\'m sure that I\'m a person !!');
+        alert('I\'m sure that I\'m a person !!');
+        break;
+}
+
+let age = prompt('do you think that I\'m a bove 20 ?');
+if (age != null) {
+    age = age.toLowerCase();
+}
+switch (gender) {
+    case 'yes':
+    case 'y':
+        // console.log('thats trueee ');
+        alert('thats trueee ');
+        break;
+    case 'no':
+    case 'n':
+        // console.log('I wish that I\'m still under 20');
+        alert('I wish that I\'m still under 20');
+        break;
+    default:
+        //  console.log('oh so what do you think then??!');
+        alert('oh so what do you think then??!');
+        break;
+}
+
+let country = prompt('do you think that I\'m live in Jordan?');
+if (country != null) {
+    country = country.toLowerCase();
+}
+switch (country) {
+    case 'yes':
+    case 'y':
+        // console.log('thats trueee ');
+        alert('thats trueee ');
+        break;
+    case 'no':
+    case 'n':
+        // console.log('you are wrong ');
+        alert('you are wrong ');
+        break;
+    default:
+        // console.log('you have to guss!!');
+        alert('you have to guss!!');
+        break;
+}
+
+
+let study = prompt('do you think that I\'m still study?');
+if (study != null) {
+    study = study.toLowerCase();
+}
+switch (study) {
+    case 'yes':
+    case 'y':
+        //  console.log('thats trueee ');
+        alert('thats trueee ');
+        break;
+    case 'no':
+    case 'n':
+        //console.log('no I\'m still study ');
+        alert('no I\'m still study ');
+        break;
+    default:
+        // console.log('you have to write yes or no!! come on ');
+        alert('you have to write yes or no!! come on ');
+        break;
+}
+
+
+

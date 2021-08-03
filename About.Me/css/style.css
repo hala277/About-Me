@@ -3,7 +3,7 @@
      background-color:rgb(5, 42, 80);
  }
  nav ul li {
-     border: 1px solid rgb(240, 241, 241); 
+    border: 1px solid rgb(240, 241, 241); 
     display: inline-block;
     width: 100px;
     padding: 5px 0 5px 0;
@@ -13,7 +13,18 @@
     
     } 
     
+     ol li {
+      list-style-type:decimal;
+      color:rgb(5, 42, 80);
+      margin: auto;
+      width: 50%;
+      padding: 1px;
+      padding-top: 10px;
     
+    }
+
+    
+
   a {
     text-decoration: none;
     color: lightblue;
@@ -27,16 +38,32 @@
     padding: 5px 0 5px 0;
     display: inline-block;
   }
+  h2{
+    width: 40px;
+    margin: auto;
+    width: 60%;
+    padding: 1px;
+    padding-top: 10px;
+    padding-bottom:0px;
+
+  }
 
   p{
     margin: auto;
     width: 60%;
     padding: 10px;
     padding-top: 50px;
-    
-    
-   
   }
+
+  .stylee{
+    list-style-type:circle;
+    color:rgb(5, 42, 80);
+    margin: auto;
+    width: 60%;
+    padding: 1px;
+    padding-top: 10px;
+  } 
+ 
   
     
  

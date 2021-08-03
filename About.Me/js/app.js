@@ -1,4 +1,5 @@
 'use strict';
+let correctMark = [];
 let userName = prompt('hi to my website what is your name stranger ?')
 userName= prompt("oh Hi nice to met you  " + userName);
 let guessingGame = prompt("do you wana play a guessing game about me ? ");
@@ -12,6 +13,8 @@ switch (guessingGame) {
     case 'y':
         //console.log('great !! ,lets start ');
         alert('great !! ,lets start ');
+        correctMark.push(1);
+        console.log(correctMark);
         break;
     case 'no':
     case 'n':
@@ -33,6 +36,8 @@ switch (gender) {
     case 'y':
         // console.log('thats trueee ');
         alert('thats trueee ');
+        correctMark.push(1);
+        console.log(correctMark);
         break;
     case 'no':
     case 'n':
@@ -49,11 +54,13 @@ let age = prompt('do you think that I\'m a bove 20 ?');
 if (age != null) {
     age = age.toLowerCase();
 }
-switch (gender) {
+switch (age) {
     case 'yes':
     case 'y':
         // console.log('thats trueee ');
         alert('thats trueee ');
+        correctMark.push(1);
+        console.log(correctMark);
         break;
     case 'no':
     case 'n':
@@ -75,6 +82,8 @@ switch (country) {
     case 'y':
         // console.log('thats trueee ');
         alert('thats trueee ');
+        correctMark.push(1);
+        console.log(correctMark);
         break;
     case 'no':
     case 'n':
@@ -97,6 +106,8 @@ switch (study) {
     case 'y':
         //  console.log('thats trueee ');
         alert('thats trueee ');
+        correctMark.push(1);
+        console.log(correctMark);
         break;
     case 'no':
     case 'n':
@@ -109,5 +120,52 @@ switch (study) {
         break;
 }
 
+let favNumber = prompt('now you have to guess my fav Number ,hint its between 1 and 10 ');
 
+let count = 1;
+   if(favNumber == 3){
+    alert('good Job you are amazing !!!');
+    correctMark.push(1);
+    console.log(correctMark);
+    }
+   else if (favNumber != 3){
+        while(count != 4){
+        if (favNumber > 3){
+            favNumber =prompt('its so high come on !!');
+           }
+        else if (favNumber < 3) {
+               favNumber = prompt('its low man come on !!!');
+            }
+            else{
+                alert('its true');
+                break;
+            }
+           count++ ;
+        }
+        alert(' come on its 3'); 
+    }
+    
+let favcolores = ['blue', 'green', 'black','yellow'];
 
+for (let i = 1; i < 6; i++) {
+    let answer = prompt('enter a color that you think is my fav');
+    for(let j = 0 ; j < favcolores.length ; j++){
+    if (answer == favcolores[j]) {
+        alert('yes that\'s true');
+        correctMark.push(1);
+        console.log(correctMark);
+        i=6;
+    }
+}
+   if(i < 6){
+       alert ('sorry its not corect');
+   }    
+    
+
+}
+alert(favcolores);
+ 
+
+console.log(correctMark.length);
+alert('your mark is '+correctMark.length+'/7');
+  

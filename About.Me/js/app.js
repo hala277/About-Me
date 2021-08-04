@@ -2,9 +2,12 @@
 let correctMark = [];
 let userName = prompt('hi to my website what is your name stranger ?')
 userName= prompt("oh Hi nice to met you  " + userName);
+
+function Q1(){
 let guessingGame = prompt("do you wana play a guessing game about me ? ");
 if (guessingGame != null) {
     guessingGame = guessingGame.toLowerCase();
+
 }
 
 
@@ -26,7 +29,9 @@ switch (guessingGame) {
         alert('you have to answer either yes or no');
         break;
 }
+}
 
+function Q2(){
 let gender = prompt('am I a girl?');
 if (gender != null) {
     gender = gender.toLowerCase();
@@ -49,7 +54,9 @@ switch (gender) {
         alert('I\'m sure that I\'m a person !!');
         break;
 }
+}
 
+function Q3(){
 let age = prompt('do you think that I\'m a bove 20 ?');
 if (age != null) {
     age = age.toLowerCase();
@@ -72,7 +79,9 @@ switch (age) {
         alert('oh so what do you think then??!');
         break;
 }
+}
 
+function Q4(){
 let country = prompt('do you think that I\'m live in Jordan?');
 if (country != null) {
     country = country.toLowerCase();
@@ -95,8 +104,9 @@ switch (country) {
         alert('you have to guss!!');
         break;
 }
+}
 
-
+function Q5(){
 let study = prompt('do you think that I\'m still study?');
 if (study != null) {
     study = study.toLowerCase();
@@ -119,7 +129,9 @@ switch (study) {
         alert('you have to write yes or no!! come on ');
         break;
 }
+}
 
+function Q6(){
 let favNumber = prompt('now you have to guess my fav Number ,hint its between 1 and 10 ');
 
 let count = 1;
@@ -144,7 +156,8 @@ let count = 1;
         }
         alert(' come on its 3'); 
     }
-    
+}
+ function Q7(){   
 let favcolores = ['blue', 'green', 'black','yellow'];
 
 for (let i = 1; i < 6; i++) {
@@ -162,9 +175,17 @@ for (let i = 1; i < 6; i++) {
    }    
     
 
+   
 }
 alert(favcolores);
- 
+}
+Q1();
+Q2();
+Q3();
+Q4();
+Q5();
+Q6();
+Q7();
 
 console.log(correctMark.length);
 alert('your mark is '+correctMark.length+'/7');
